@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="rangular_lab">
+
   <head>
-    <title>RangularLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
 
+    <!-- angular -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+
+  <!-- ngRoute -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+
+    <%= javascript_include_tag 'application' %>
+
+    <title>RangularLab</title>
+  </head>
   <body>
     <%= yield %>
   </body>
